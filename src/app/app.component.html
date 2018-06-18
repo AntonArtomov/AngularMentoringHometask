@@ -1,7 +1,16 @@
-<app-header></app-header>
-<div class="container">
-  <app-breadcrumbs></app-breadcrumbs>
-  <app-search></app-search>
-  <app-course-list class="panel-body"></app-course-list>
+<div class="card">
+    <app-header class="card-header"></app-header>
+    <div class="card-body">
+      <app-breadcrumbs></app-breadcrumbs>
+      <div class="row">
+        <div class="col-md-4">
+            <app-search></app-search>
+        </div>
+        <div class="col-md-8">
+            <input type="button" class="btn btn-info float-lg-right" value="Add Course">
+        </div>
+      </div>
+      <app-course-list class="container"></app-course-list>
+    </div>
+    <app-footer class="card-footer"></app-footer>
 </div>
-<app-footer></app-footer>
