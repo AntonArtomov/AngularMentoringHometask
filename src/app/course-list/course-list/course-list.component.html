@@ -1,3 +1,6 @@
 <div class="border rounded">
-  <course-list-item *ngFor="let course of courses" [courseItem]="course" class="list-item"></course-list-item>
+  <course-list-item *ngFor="let course of courses" [courseItem]="course" class="list-item" (courseDeleted)="onCourseDeleted(course)"></course-list-item>
+  <div>
+      <input type="button" class="btn btn-info btn-block" value="Load more..." (click)="onLoadMoreClick()">
+  </div>
 </div>

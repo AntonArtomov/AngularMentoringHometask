@@ -1,7 +1,7 @@
 <div class="card bg-light mb-3">
     <div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div>{{courseItem.Title}}</div>
             </div>
             <div class="col-md-2">
@@ -10,16 +10,16 @@
             <div class="col-md-2">
                 <div>{{courseItem.CreationDate | date: 'dd/MM/yyyy'}}</div>
             </div>
-            <div class="col-md-4">
-              <input type="button" class="btn btn-info" value="edit">
+            <div class="col-md-1">
+              <input type="button" class="btn btn-info btn-block" value="edit">
             </div>
         </div>>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-10">
                 <div>{{courseItem.Description}}</div>
               </div>
-              <div class="col-md-4">
-                <input type="button" class="btn btn-info" value="delete">
+              <div class="col-md-1">
+                <input type="button" class="btn btn-info btn-block" value="delete" (click)="deleteCourse()">
               </div>
         </div>
       </div>

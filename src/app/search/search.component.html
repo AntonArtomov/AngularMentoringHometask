@@ -1,7 +1,7 @@
 <div class="input-group mb-2">
-    <input type="search" class="form-control" placeholder="Name, fragment or date" aria-label="Search" aria-describedby="basic-addon2">
+    <input type="search" class="form-control" [(ngModel)]="searchText" placeholder="Name, fragment or date" aria-label="Search" aria-describedby="basic-addon2">
     <div class="input-group-append">
-      <input type="button" class="btn btn-primary" id="basic-addon2" value="Search">
+      <input type="button" class="btn btn-primary" id="basic-addon2" (click)="onSearchClick()" value="Search">
     </div>
   </div>
 

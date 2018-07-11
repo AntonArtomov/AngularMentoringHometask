@@ -6,6 +6,7 @@ import { CoreModule } from 'src/app/core/core.module';
 import { CourseListModule } from 'src/app/course-list/course-list.module';
 import { SearchComponent } from './search/search.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
   imports: [
     BrowserModule,
     CoreModule,
-    CourseListModule
+    CourseListModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
