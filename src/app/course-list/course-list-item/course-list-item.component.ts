@@ -19,4 +19,10 @@ export class CourseListItemComponent implements OnInit {
   deleteCourse() {
     this.courseDeleted.emit();
   }
+
+  /*
+  sut.deleteCource();
+
+  expect(sut.courceDeleted.emit).toHaveBeenCalled()
+  */
 }

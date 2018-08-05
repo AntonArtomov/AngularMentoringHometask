@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '../../../node_modules/@types/selenium-webdriver/http';
 
 @Component({
   selector: 'app-search',
@@ -8,12 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class SearchComponent implements OnInit {
   searchText: string;
 
-  constructor() { }
+  constructor(
+  //  private http: HttpClient
+  ) { }
 
   ngOnInit() {
   }
 
   onSearchClick() {
+  //  return this.http.send()
     console.log(this.searchText);
   }
 }
